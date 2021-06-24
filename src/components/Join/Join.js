@@ -17,6 +17,7 @@ const Join = () => {
 				<div>
 					<input placeholder="Room" className="joinInput mt-20" type="text" onChange={(e) => setRoom(e.target.value)} />
 				</div>
+				{/* 링크에 매개변수를 함께 보냄 */}
 				<Link onClick={e => (!name || !room) ? e.preventDefault() : null } to={`/chat?name=${name}&room=${room}`}>
 					<button className={'button mt-20'} type="submit">Sign In</button>
 				</Link>
