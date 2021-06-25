@@ -1,71 +1,71 @@
 html,
 body {
-	font-family: 'Roboto', sans-serif;
-	padding: 0;
-	margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 #root {
-	height: 100vh;
+  height: 100vh;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .contentsContainer {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	height: 100vh;
-	align-items: center;
-	background-image: url('../../img/background.jpg');
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-image: url('../../img/background.jpg');
 }
 
 .joinContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 30%;
-	height: 50%;
-	border-radius: 10px;
-	background-color: rgb(54, 57, 63);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: rgb(54, 57, 63);
 }
 
 .joinInput {
-	box-shadow: none;
-	color: white;
-	border-radius: 3px;
-	padding: 15px 20px;
-	width: 50%;
-	border: 1px solid rgb(4, 4, 5);
-	background-color: rgb(48, 51, 57);
+  box-shadow: none;
+  color: white;
+  border-radius: 3px;
+  padding: 15px 20px;
+  width: 50%;
+  border: 1px solid rgb(4, 4, 5);
+  background-color: rgb(48, 51, 57);
 }
 
 .title {
-	color: white;
-	font-size: 2.5em;
-	padding-bottom: 10px;
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 10px;
 }
 
 .button {
-	color: #fff;
-	background: rgb(88, 101, 241);
-	padding: 20px;
-	border-radius: 3px;
-	display: inline-block;
-	border: none;
-	width: 50%;
+  color: #fff;
+  background: rgb(88, 101, 241);
+  padding: 20px;
+  border-radius: 3px;
+  display: inline-block;
+  border: none;
+  width: 50%;
 }
 
 .mt-20 {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .joinInput:hover {
-	border: 1px solid rgb(35, 37, 41);
+  border: 1px solid rgb(35, 37, 41);
 }
 
 .joinInput:focus {
-	border: 1px solid rgb(0, 175, 244);
+  border: 1px solid rgb(0, 175, 244);
 }

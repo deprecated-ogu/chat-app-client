@@ -1,20 +1,20 @@
 .form {
-	display: flex;
-	margin: 10px;
+  display: flex;
+  margin: 10px;
 }
 
 .input {
-	border: none;
-	border-radius: 8px;
-	padding: 3%;
-	width: 100%;
-	font-size: 0.9em;
-	color: white;
-	background-color: rgb(65, 68, 74);
+  border: none;
+  border-radius: 8px;
+  padding: 3%;
+  width: 100%;
+  font-size: 0.9em;
+  color: white;
+  background-color: rgb(65, 68, 74);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-	outline: none;
+  outline: none;
 }

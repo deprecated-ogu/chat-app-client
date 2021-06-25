@@ -6,7 +6,6 @@ import ReactEmoji from 'react-emoji';
 
 const Message = ({ message: { text, user, date } }) => {
   const [isHover, setHover] = useState(false);
-  const time = "time";
 
   let isAdmin = false;
 

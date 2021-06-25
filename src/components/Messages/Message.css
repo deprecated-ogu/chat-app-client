@@ -1,51 +1,51 @@
 .messageBox {
-	display: flex;
-	justify-content: space-between;
-	/* padding-right: 10px; */
-	color: white;
-	max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding-right: 10px; */
+  color: white;
+  max-width: 100%;
 }
 
 .messageText {
-	font-size: 0.9em;
-	width: 85%;
-	justify-content: flex-start;
-	color: rgb(207, 208, 209);
-	margin-top: 4px;
-	margin-bottom: 4px;
+  font-size: 0.9em;
+  width: 85%;
+  justify-content: flex-start;
+  color: rgb(207, 208, 209);
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .messageContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-	/* margin-bottom: 16px; */
-	padding: 0 5%;
+  /* margin-bottom: 16px; */
+  padding: 0 5%;
 }
 
 .timeText {
-	font-size: 0.7em;
-	margin: 0px;
-	white-space: nowrap;
-	color: rgb(103, 107, 112);
+  font-size: 0.7em;
+  margin: 0px;
+  white-space: nowrap;
+  color: rgb(103, 107, 112);
 }
 
 .userName {
-	font-size: 1em;
-	display: flex;
-	align-items: center;
-	/* color: rgb(250, 220, 107); */
-	color: white;
-	margin-top: 10px;
-	margin-bottom: 0px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  /* color: rgb(250, 220, 107); */
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .messageContainer:hover {
-	background-color: rgb(50, 53, 58);
+  background-color: rgb(50, 53, 58);
 }
 
 .admin {
-	font-size: 0.8em;
-	color: rgb(151, 151, 151);
+  font-size: 0.8em;
+  color: rgb(151, 151, 151);
 }
