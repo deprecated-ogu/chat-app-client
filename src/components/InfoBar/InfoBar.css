@@ -2,13 +2,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: #2979FF;
+	background: rgb(55, 57, 62);
+	border-bottom: 2px solid rgb(44, 46, 49);
 	border-radius: 4px 4px 0 0;
 	height: 60px;
 	width: 100%;
 }
 
-.leftInnerContainer {
+.leftInner {
 	flex: 0.5;
 	display: flex;
 	align-items: center;
@@ -16,13 +17,9 @@
 	color: white;
 }
 
-.rightInnerContainer {
+.rightInner {
 	display: flex;
 	flex: 0.5;
 	justify-content: flex-end;
-	margin-right: 5%;
-}
-
-.onlineIcon {
 	margin-right: 5%;
 }

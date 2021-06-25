@@ -1,36 +1,38 @@
-import React from 'react';
+import React, {useState, Fragment} from 'react';
 
 import './Message.css';
 
 import ReactEmoji from 'react-emoji';
 
-const Message = ({ message: { text, user }, name }) => {
-  let isSentByCurrentUser = false;
+const Message = ({ message: { text, user, date } }) => {
+  const [isHover, setHover] = useState(false);
+  const time = "time";
 
-  const myName = name.trim().toLowerCase();
+  let isAdmin = false;
 
-  if(user === myName) {
-    isSentByCurrentUser = true;
+  if (user === 'admin') {
+    isAdmin = true;
+  }
+
+  const handleHover = function () {
+    setHover(!isHover);
   }
 
   return (
-    isSentByCurrentUser
-      ? (
-        <div className="messageContainer justifyEnd">
-          <p className="sentText pr-10">{myName}</p>
-          <div className="messageBox backgroundBlue">
-            <p className="messageText colorWhite">{ReactEmoji.emojify(text)}</p>
-          </div>
-        </div>
-        )
-        : (
-          <div className="messageContainer justifyStart">
-            <div className="messageBox backgroundLight">
-              <p className="messageText colorDark">{ReactEmoji.emojify(text)}</p>
-            </div>
-            <p className="sentText pl-10 ">{user}</p>
-          </div>
-        )
+    <div className="messageContainer"
+    onMouseEnter={handleHover}
+    onMouseLeave={handleHover}
+    >
+      {isAdmin ? <Fragment></Fragment> : <p className="userName">{user}</p>}
+      <div className="messageBox">
+        {
+          isAdmin
+          ? <p className="messageText admin">{ReactEmoji.emojify(text)}</p>
+          : <p className="messageText">{ReactEmoji.emojify(text)}</p>
+        }
+        {isHover ? <p className="timeText">{date}</p> : <Fragment></Fragment>}
+      </div>
+    </div>
   );
 }
 
