@@ -9,8 +9,8 @@ import Messages from '../Messages/Messages';
 import './Chat.css';
 
 let socket; // socket을 담을 빈 변수 선언
-const ENDPOINT = 'http://localhost:5000/';
-// const ENDPOINT = 'https://chat-webfront-app.herokuapp.com/';
+// const ENDPOINT = 'http://localhost:5000/';
+const ENDPOINT = 'https://chat-web-front-app.herokuapp.com/';
 
 const Chat = ({ location }) => {
   const [name, setName] = useState('');
